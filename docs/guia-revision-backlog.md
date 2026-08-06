@@ -25,39 +25,58 @@ Cada ítem necesita **al menos un revisor distinto de su autor**. Los ítems de 
 
 ## 3. Listas de verificación
 
-### 3.1 Historias de usuario (SOL-18 … SOL-59)
+> Los aspectos de esta sección son **los que define el curso** en el video *"Construcción y
+> revisión de historias de usuario"* (caso "Busco ayuda"). La revisión ocurre en **dos rondas**:
+> primero sobre el listado, después sobre cada historia ya detallada.
 
-Marca cada punto. Si alguno falla, comenta con el hallazgo.
+### 3.0 Estructura obligatoria de una historia
 
-**Forma**
+Toda historia detallada debe tener los cinco elementos:
 
-- [ ] Usa el formato **Como / quiero / para** completo, con un rol real (no "el usuario" genérico).
-- [ ] El "para" expresa un **beneficio**, no una repetición de la funcionalidad.
-- [ ] El título es específico y se entiende sin abrir el ítem.
+1. **Identificador** — `HU-001`
+2. **Nombre** — título corto y accionable ("Cotizar desde el canal de un socio")
+3. **Descripción** — `Como <usuario> quiero <funcionalidad> para <propósito>`
+4. **Criterios de aceptación**
+5. **Mockup** — la interfaz gráfica de cómo se vería en la aplicación
 
-**Criterios de aceptación**
+### 3.1 Primera ronda — revisión del listado
 
-- [ ] Están en formato **Dado – Cuando – Entonces**.
-- [ ] Son **verificables**: alguien externo podría decir sí/no sin discutir.
-- [ ] Cuando el enunciado da una meta numérica (p95, p99, %, tiempos), **el número aparece**.
-- [ ] Cubren al menos un **camino no feliz** (error, degradación, permiso denegado, sin conexión).
+Se revisa el listado completo, antes de detallar. Cuatro aspectos:
 
-**INVEST**
+- [ ] **Forma** — cada historia dice literalmente *Como… quiero… para…*. Si falta el "quiero" o el "para", es hallazgo. También lo es tener solo nombre sin descripción.
+- [ ] **Completo** — el listado cubre **todas** las funcionalidades del enunciado. Buscar la funcionalidad que nadie escribió.
+- [ ] **Consistente** — no hay contradicciones entre historias, y **ninguna historia inventa algo que el enunciado no pidió**. Si sobra, se elimina.
+- [ ] **Independiente** — cada historia se puede desarrollar por separado. Si una incluye funcionalidades ya cubiertas por otra (p. ej. "ver la lista **y** comentar"), no es independiente: hay que recortarla.
 
-- [ ] **I**ndependiente — se puede trabajar sin esperar a otra historia, o la dependencia está declarada.
-- [ ] **N**egociable — describe el qué, no impone la solución técnica.
-- [ ] **V**aliosa — un stakeholder identificable la quiere.
-- [ ] **E**stimable — el equipo puede estimarla sin investigación previa.
-- [ ] **S**mall — cabe en un sprint. Si tiene 13 puntos, pregunta si debería partirse.
-- [ ] **T**esteable — se sabe cómo probarla.
+### 3.2 Segunda ronda — revisión de la historia detallada
 
-**Trazabilidad**
+Se revisa cada historia ya con criterios de aceptación y mockup. Siete aspectos:
+
+- [ ] **Completo** — la funcionalidad, el mockup y los criterios de aceptación cubren todo lo pedido. Si la descripción menciona un dato, ese dato debe estar en los criterios **y** en el mockup.
+- [ ] **Consistente** — no se contradice a sí misma ni a otras historias, y el mockup refleja lo que dice el enunciado.
+- [ ] **Negociable** — se ha determinado si es **necesaria o deseable**.
+- [ ] **Valiosa** — genera valor al producto y a sus usuarios.
+- [ ] **Estimable** — se puede estimar el esfuerzo con la tecnología definida.
+- [ ] **Pequeña** — **no requiere más de dos días de una sola persona**. Si no cabe, hay que partirla.
+- [ ] **Comprobable** — la descripción y los criterios bastan para verificar la ejecución correcta. Los criterios deben incluir **límites concretos** (tamaños máximos, formatos, validaciones), no solo el camino feliz.
+
+### 3.3 Trazabilidad (adicional de nuestro proyecto)
 
 - [ ] Tiene la etiqueta de su **feature** (`WEB-F01`, `MOV-F04`, …) o `habilitador`.
 - [ ] Tiene la etiqueta del **componente** (`web`, `movil`, `plataforma`).
 - [ ] Tiene al menos una etiqueta de **atributo de calidad** y es la correcta.
 - [ ] Cuelga de la **épica** correcta.
-- [ ] La prioridad es coherente con el riesgo y con el recorrido crítico que soporta.
+- [ ] Cuando el enunciado da una meta numérica (p95, p99, %, RTO), **el número aparece** en los criterios.
+
+### 3.4 Deuda conocida al iniciar la revisión
+
+Dos brechas ya identificadas contra el formato del curso — conviene resolverlas antes o durante
+la revisión:
+
+| Brecha | Alcance | Acción |
+| --- | --- | --- |
+| **Faltan los mockups** | Las 42 historias | Diseñar el mockup de cada historia detallada. |
+| **Criterio "Pequeña" incumplido** | 15 historias de 13 pts y 16 de 8 pts | Partir las de 13 puntos en historias de ≤ 2 días. |
 
 ### 3.2 Features (SOL-5 … SOL-16)
 
@@ -91,25 +110,28 @@ en algún criterio de aceptación:
 
 ## 4. Cómo dejar el comentario en Jira
 
-Abre el ítem → **Comentar**. Usa este formato para que la evidencia sea legible y uniforme:
+Abre el ítem → **Comentar**. Cada hallazgo se etiqueta con **el aspecto del curso** que incumple,
+igual que hace Felipe en el video:
 
 ```
-Revisión por pares — <Tu nombre> — <AAAA-MM-DD>
+Revisión por pares — <Tu nombre> — <AAAA-MM-DD> — Ronda 1 | Ronda 2
 
 Resultado: Aprobada | Aprobada con observaciones | Requiere cambios
 
 Hallazgos:
-1. [Criterios] El segundo criterio no es verificable: "el sistema responde rápido"
-   no tiene umbral. El enunciado (§6.1) exige p95 <= 250 ms — proponer ese número.
-2. [INVEST] 13 puntos y dos comportamientos independientes; sugiero partirla en
-   "cotizar" y "degradar ante falla de proveedor".
+1. [Forma] La descripción no dice "para": no se entiende el propósito.
+   Proponer: "...para no sacar a mi cliente de mi canal".
+2. [Pequeña] 13 puntos, muy por encima de los 2 días que exige el criterio.
+   Sugiero partirla en "cotizar" y "degradar ante falla de proveedor".
+3. [Comprobable] Los criterios no definen el timeout de la dependencia externa.
+   El enunciado (§6.1) exige 700 ms — incluir ese número.
 
 Acuerdo: <qué se decidió hacer y quién lo aplica>
 ```
 
 **Reglas del comentario**
 
-- Un hallazgo por línea numerada, con la **etiqueta de categoría** entre corchetes: `[Forma]`, `[Criterios]`, `[INVEST]`, `[Trazabilidad]`, `[Cobertura]`.
+- Un hallazgo por línea numerada, con **el aspecto entre corchetes**. Ronda 1: `[Forma]`, `[Completo]`, `[Consistente]`, `[Independiente]`. Ronda 2: `[Completo]`, `[Consistente]`, `[Negociable]`, `[Valiosa]`, `[Estimable]`, `[Pequeña]`, `[Comprobable]`. Adicional nuestro: `[Trazabilidad]`.
 - Sé concreto: cita el texto problemático y **propón la corrección**, no solo el problema.
 - Si está bien, dilo igual y explica qué verificaste — un "Aprobada" sin sustento no es evidencia.
 - Si el hallazgo implica cambiar el ítem, **el autor lo corrige** y responde al comentario indicando qué cambió.
