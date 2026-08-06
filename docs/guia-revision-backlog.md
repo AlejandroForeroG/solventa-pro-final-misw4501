@@ -133,18 +133,32 @@ resueltos o convertidos en una actividad nueva.
 
 ## 6. Reparto del trabajo
 
-Regla: cada persona revisa **un bloque que no escribió**, en rotación circular. Ajusten los
-bloques al número real de integrantes.
+### 6.1 Integrantes
 
-| Bloque | Ítems | Cantidad | Autor | Revisor 1 | Revisor 2 (solo `Highest` y `HU-Txx`) |
-| --- | --- | --: | --- | --- | --- |
-| A. Épicas y features web | SOL-1, SOL-2, SOL-5 … SOL-10 | 8 | | | — |
-| B. Épicas y features móvil + plataforma | SOL-3, SOL-4, SOL-17, SOL-11 … SOL-16 | 9 | | | — |
-| C. Historias WEB-E01 | SOL-18 … SOL-26 | 9 | | | |
-| D. Historias WEB-E02 | SOL-27 … SOL-35 | 9 | | | |
-| E. Historias MOV-E01 | SOL-36 … SOL-41 | 6 | | | |
-| F. Historias MOV-E02 | SOL-42 … SOL-49 | 8 | | | |
-| G. Historias técnicas | SOL-50 … SOL-59 | 10 | | | ← todas requieren 2 |
+| Clave | Correo institucional | Nombre |
+| --- | --- | --- |
+| **P1** | ja.forerog1@uniandes.edu.co | Juan Alejandro Forero Gómez |
+| **P2** | da.rodriguezv12@uniandes.edu.co | _por completar_ |
+| **P3** | y.marinr@uniandes.edu.co | _por completar_ |
+| **P4** | js.sanchezt123@uniandes.edu.co | _por completar_ |
+
+### 6.2 Asignación
+
+Rotación circular: quien responde por un bloque no lo revisa. Cada persona revisa entre 14 y 18
+ítems.
+
+| Bloque | Ítems | Cantidad | Responsable | Revisor 1 | Revisor 2 |
+| --- | --- | --: | :-: | :-: | :-: |
+| A. Épicas y features web | SOL-1, SOL-2, SOL-5 … SOL-10 | 8 | P1 | P2 | — |
+| B. Épicas y features móvil + plataforma | SOL-3, SOL-4, SOL-17, SOL-11 … SOL-16 | 9 | P2 | P3 | — |
+| C. Historias WEB-E01 | SOL-18 … SOL-26 | 9 | P3 | P4 | P1 (solo SOL-20, SOL-22, SOL-23) |
+| D. Historias WEB-E02 | SOL-27 … SOL-35 | 9 | P4 | P1 | P2 (solo SOL-29) |
+| E. Historias MOV-E01 | SOL-36 … SOL-41 | 6 | P1 | P3 | — |
+| F. Historias MOV-E02 | SOL-42 … SOL-49 | 8 | P2 | P4 | — |
+| G. Historias técnicas | SOL-50 … SOL-59 | 10 | P3 | P4 | P1 (las 10) |
+
+**Carga por persona** — P1: 15 revisiones · P2: 10 · P3: 15 · P4: 27 (las técnicas son cortas).
+Si el reparto queda desbalanceado, muevan el bloque F o G y actualicen esta tabla.
 
 **Ítems de prioridad `Highest` (requieren dos revisores):** SOL-20, SOL-22, SOL-23, SOL-29, SOL-58.
 

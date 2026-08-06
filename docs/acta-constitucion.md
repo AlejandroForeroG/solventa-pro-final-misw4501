@@ -120,7 +120,18 @@ diferenciadas y APIs para distribución embebida.
 
 ## 9. Equipo y roles
 
-> Pendiente de completar con los nombres del equipo antes de la entrega.
+### 9.1 Integrantes
+
+| # | Correo institucional | Nombre | Usuario GitHub |
+| --: | --- | --- | --- |
+| 1 | ja.forerog1@uniandes.edu.co | Juan Alejandro Forero Gómez | AlejandroForeroG |
+| 2 | da.rodriguezv12@uniandes.edu.co | _por completar_ | _por completar_ |
+| 3 | y.marinr@uniandes.edu.co | _por completar_ | YesidMarinUni |
+| 4 | js.sanchezt123@uniandes.edu.co | _por completar_ | _por completar_ |
+
+### 9.2 Roles
+
+> Asignar antes de la entrega. Un integrante puede asumir más de un rol.
 
 | Rol | Responsable | Responsabilidad principal |
 | --- | --- | --- |
