@@ -14,13 +14,14 @@ Epic  (WEB-E01 … MOV-E02)
 
 | Recurso | Enlace |
 | --- | --- |
-| Sitio Jira | _pendiente de confirmar_ |
-| Proyecto | _pendiente_ |
-| Tablero | _pendiente_ |
-| Backlog | _pendiente_ |
+| Sitio Jira | https://proyfinal.atlassian.net |
+| Proyecto | https://proyfinal.atlassian.net/jira/software/projects/SOL |
+| Tablero | https://proyfinal.atlassian.net/jira/software/projects/SOL/boards/2 |
+| Backlog | https://proyfinal.atlassian.net/jira/software/projects/SOL/boards/2/backlog |
 
-> Actualizar esta tabla en cuanto el proyecto Jira esté creado. Los enlaces son parte de la
-> entrega de la Pregunta 1.
+**Clave del proyecto:** `SOL` · **Tipo:** Software gestionado por el equipo · **Plantilla:** Scrum
+
+> Los evaluadores del curso deben tener acceso de lectura al proyecto antes de la entrega.
 
 ## Convenciones del tablero
 

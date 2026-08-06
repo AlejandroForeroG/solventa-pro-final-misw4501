@@ -46,8 +46,8 @@ internos y externos, e hitos principales.
 
 | Recurso | Enlace |
 | --- | --- |
-| Tablero Jira | _pendiente_ |
-| Backlog | _pendiente_ |
+| Tablero Jira | https://proyfinal.atlassian.net/jira/software/projects/SOL/boards/2 |
+| Backlog | https://proyfinal.atlassian.net/jira/software/projects/SOL/boards/2/backlog |
 | Convenciones del tablero | `docs/tablero.md` |
 
 ### 4. Video de evidencias
