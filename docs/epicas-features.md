@@ -197,6 +197,24 @@ responder solicitudes de información desde la aplicación.
 
 ---
 
+# Plataforma
+
+## PLA-E01. Habilitadores técnicos y experimentos de arquitectura
+
+Historias técnicas transversales que sostienen los seis atributos de calidad y producen la
+evidencia exigida por el caso. No corresponden a una feature de negocio, pero condicionan que
+todas las demás cumplan sus criterios de aceptación.
+
+Cubre: versionado de APIs, presupuesto de latencia por dependencia, observabilidad extremo a
+extremo, autoescalado y contrapresión, continuidad multi-zona y multi-región, adaptadores de
+integración, cifrado y PCI-DSS, CI/CD sin downtime, banco de experimentos y detección de fraude.
+
+**Historias:** HU-T01 a HU-T10 (ver [`historias-usuario.md`](historias-usuario.md)).
+
+**Atributos de calidad:** los seis.
+
+---
+
 ## Matriz de trazabilidad
 
 | Feature | Épica | Recorrido crítico | Capacidad de negocio | Atributos |

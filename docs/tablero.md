@@ -2,13 +2,21 @@
 
 ## Herramienta
 
-El proyecto se gestiona en **Jira Software** (tablero Scrum), con la jerarquía:
+El proyecto se gestiona en **Jira Software** (tablero Scrum, gestionado por el equipo), con la
+jerarquía:
 
 ```
-Epic  (WEB-E01 … MOV-E02)
- └── Historia   (features WEB-Fxx / MOV-Fxx e historias HU-xxx)
-      └── Subtarea  (trabajo técnico)
+Epic  (WEB-E01 · WEB-E02 · MOV-E01 · MOV-E02 · PLA-E01)
+ ├── Función   (features WEB-Fxx / MOV-Fxx)
+ ├── Historia  (historias HU-xxx y HU-Txx)
+ └── Subtarea  (trabajo técnico, dentro de cada ítem)
 ```
+
+> **Nota sobre la jerarquía.** Jira gestionado por el equipo solo ofrece tres niveles
+> (Epic → ítem → subtarea), de modo que features e historias conviven en el mismo nivel bajo la
+> épica. La trazabilidad *feature → historia* se conserva de dos formas: cada historia lleva la
+> etiqueta de su feature (p. ej. `WEB-F01`) y la nombra explícitamente en su descripción. Filtrar
+> el backlog por esa etiqueta reconstruye la feature completa.
 
 ## Enlaces
 
@@ -47,8 +55,19 @@ Epic  (WEB-E01 … MOV-E02)
 
 ## Contenido cargado
 
-| Nivel | Cantidad | Fuente |
-| --- | --: | --- |
-| Épicas | 4 | [`epicas-features.md`](epicas-features.md) |
-| Features (como historias padre) | 12 | [`epicas-features.md`](epicas-features.md) |
-| Historias de usuario | 42 | [`historias-usuario.md`](historias-usuario.md) |
+| Nivel | Tipo en Jira | Cantidad | Claves | Fuente |
+| --- | --- | --: | --- | --- |
+| Épicas | Epic | 5 | SOL-1 … SOL-4, SOL-17 | [`epicas-features.md`](epicas-features.md) |
+| Features | Función | 12 | SOL-5 … SOL-16 | [`epicas-features.md`](epicas-features.md) |
+| Historias de usuario | Historia | 42 | SOL-18 … SOL-59 | [`historias-usuario.md`](historias-usuario.md) |
+| **Total** | | **59** | | |
+
+### Mapa de épicas
+
+| Épica | Clave Jira | Features | Historias |
+| --- | --- | --- | --- |
+| WEB-E01 · Adquisición, suscripción y gestión digital de pólizas | SOL-1 | WEB-F01 … F03 (SOL-5 … SOL-7) | HU-001 … HU-009 (SOL-18 … SOL-26) |
+| WEB-E02 · Operación de siniestros, socios y control del negocio | SOL-2 | WEB-F04 … F06 (SOL-8 … SOL-10) | HU-010 … HU-018 (SOL-27 … SOL-35) |
+| MOV-E01 · Identidad móvil, autoservicio y pólizas disponibles | SOL-3 | MOV-F01 … F03 (SOL-11 … SOL-13) | HU-019 … HU-024 (SOL-36 … SOL-41) |
+| MOV-E02 · Atención del siniestro y asistencia en movilidad | SOL-4 | MOV-F04 … F06 (SOL-14 … SOL-16) | HU-025 … HU-032 (SOL-42 … SOL-49) |
+| PLA-E01 · Habilitadores técnicos y experimentos de arquitectura | SOL-17 | — | HU-T01 … HU-T10 (SOL-50 … SOL-59) |

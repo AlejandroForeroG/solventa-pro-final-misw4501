@@ -487,9 +487,11 @@ sigue el formato **Como / Quiero / Para**, con criterios de aceptación en forma
 
 ## Resumen de esfuerzo
 
-| Componente | Historias | Puntos |
-| --- | --: | --: |
-| Web (WEB-F01 … WEB-F06) | 18 | 165 |
-| Móvil (MOV-F01 … MOV-F06) | 14 | 107 |
-| Técnicas transversales | 10 | 102 |
-| **Total** | **42** | **374** |
+| Componente | Épica | Historias | Puntos | Claves Jira |
+| --- | --- | --: | --: | --- |
+| Web (WEB-F01 … WEB-F06) | WEB-E01, WEB-E02 | 18 | 165 | SOL-18 … SOL-35 |
+| Móvil (MOV-F01 … MOV-F06) | MOV-E01, MOV-E02 | 14 | 107 | SOL-36 … SOL-49 |
+| Técnicas transversales | PLA-E01 | 10 | 102 | SOL-50 … SOL-59 |
+| **Total** | | **42** | **374** | |
+
+Ver el mapa completo de claves Jira en [`tablero.md`](tablero.md).

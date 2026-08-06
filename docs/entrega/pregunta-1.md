@@ -28,8 +28,9 @@
 | Versión en el repositorio | `docs/epicas-features.md` |
 | Historias de usuario derivadas | `docs/historias-usuario.md` |
 
-**Resumen:** 4 épicas (2 web, 2 móvil), 12 features y 42 historias de usuario, todas con
-criterios de aceptación medibles ligados a los seis atributos de calidad del caso.
+**Resumen:** 5 épicas (2 web, 2 móvil, 1 de plataforma), 12 features y 42 historias de usuario
+(32 funcionales + 10 habilitadores técnicos), todas con criterios de aceptación medibles ligados
+a los seis atributos de calidad del caso. Los 59 ítems están cargados en el tablero Jira.
 
 ### 2. Acta de constitución del proyecto
 
