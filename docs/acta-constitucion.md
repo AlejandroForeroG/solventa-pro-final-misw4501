@@ -125,9 +125,9 @@ diferenciadas y APIs para distribución embebida.
 | # | Correo institucional | Nombre | Usuario GitHub |
 | --: | --- | --- | --- |
 | 1 | ja.forerog1@uniandes.edu.co | Juan Alejandro Forero Gómez | AlejandroForeroG |
-| 2 | da.rodriguezv12@uniandes.edu.co | _por completar_ | _por completar_ |
+| 2 | da.rodriguezv12@uniandes.edu.co | _por completar_ | darodriguezv12 |
 | 3 | y.marinr@uniandes.edu.co | _por completar_ | YesidMarinUni |
-| 4 | js.sanchezt123@uniandes.edu.co | _por completar_ | _por completar_ |
+| 4 | js.sanchezt123@uniandes.edu.co | _por completar_ | jussanchezt |
 
 ### 9.2 Roles
 
