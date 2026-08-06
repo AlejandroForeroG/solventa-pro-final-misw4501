@@ -1,0 +1,48 @@
+# Dependencias
+node_modules/
+.pnp/
+.pnp.js
+vendor/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Builds
+dist/
+build/
+out/
+target/
+*.apk
+*.aab
+*.ipa
+.next/
+.expo/
+
+# Entornos y secretos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.keystore
+credentials.json
+service-account*.json
+
+# Herramientas y editores
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs y cobertura
+*.log
+npm-debug.log*
+yarn-error.log*
+coverage/
+.nyc_output/
+
+# Resultados de experimentos (los reportes sí se versionan)
+experimentos/**/resultados-crudos/
+experimentos/**/*.jtl
