@@ -110,17 +110,28 @@ convertidos en una actividad nueva.
 
 ## 7. Reparto
 
-| Bloque | Ítems | Cant. | Autor | Revisor |
-| --- | --- | --: | --- | --- |
-| A. Épicas y features web | SOL-1, SOL-2, SOL-5 … SOL-10 | 8 | | |
-| B. Épicas y features móvil + plataforma | SOL-3, SOL-4, SOL-17, SOL-11 … SOL-16 | 9 | | |
-| C. Historias WEB-E01 | SOL-18 … SOL-26 | 9 | | |
-| D. Historias WEB-E02 | SOL-27 … SOL-35 | 9 | | |
-| E. Historias MOV-E01 | SOL-36 … SOL-41 | 6 | | |
-| F. Historias MOV-E02 | SOL-42 … SOL-49 | 8 | | |
-| G. Historias técnicas | SOL-50 … SOL-59 | 10 | | |
+El trabajo ya está asignado en Jira. **Cada quien revisa lo del siguiente en la rotación**, de modo
+que nadie revisa lo suyo:
 
-**Integrantes:** ja.forerog1 · da.rodriguezv12 · y.marinr · js.sanchezt123 (todos `@uniandes.edu.co`)
+| Responsable | Ítems asignados | **Revisa lo de** |
+| --- | --: | --- |
+| Alejandro Forero | 12 | → David Rodríguez |
+| David Rodríguez | 12 | → Juan S. Sánchez |
+| Juan S. Sánchez | 11 | → Yesid Marín |
+| Yesid Marín | 11 | → Alejandro Forero |
+
+Para ver tus ítems o los que te toca revisar:
+
+```jql
+project = SOL AND assignee = currentUser()                      -- lo mío
+project = SOL AND assignee = "da.rodriguezv12@uniandes.edu.co"  -- lo que reviso
+```
+
+**Épicas y features (17 ítems):** SOL-1 … SOL-17 no entran en la rotación individual; se revisan
+entre todos en una sesión conjunta, porque definen el marco del que cuelga todo lo demás.
+
+**Segundo revisor** para los 5 ítems de prioridad `Highest` (SOL-20, SOL-22, SOL-23, SOL-29,
+SOL-58): lo asume quien esté dos posiciones adelante en la rotación.
 
 ---
 

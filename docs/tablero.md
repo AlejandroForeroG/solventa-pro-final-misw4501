@@ -87,6 +87,27 @@ tres vías complementarias:
 | Vínculo `Relates` a la feature | ✅ | ✅ | ❌ |
 | Prefijo `[WEB-F01]` en el título | ❌ | ❌ | ✅ |
 
+### Reparto del trabajo
+
+| Integrante | Correo | Historias | Tareas | **Total** |
+| --- | --- | --: | --: | --: |
+| Juan Alejandro Forero Gómez | ja.forerog1@uniandes.edu.co | 9 | 3 | **12** |
+| David Armando Rodríguez Varón | da.rodriguezv12@uniandes.edu.co | 8 | 4 | **12** |
+| Juan Sebastián Sánchez Tabares | js.sanchezt123@uniandes.edu.co | 9 | 2 | **11** |
+| Yesid Marín | y.marinr@uniandes.edu.co | 9 | 2 | **11** |
+| | | **35** | **11** | **46** |
+
+Las 35 historias no se reparten en cuatro partes exactas (35 ÷ 4 = 8,75), así que el equilibrio se
+logra sobre el total de trabajo asignable: quien recibe menos historias compensa con más tareas
+técnicas. Las tareas se asignaron por afinidad temática con las historias que ya tenía cada quien:
+
+| Integrante | Tareas técnicas |
+| --- | --- |
+| Alejandro Forero | TEC-01 (versionado de APIs), TEC-09 (banco de experimentos), EXP-01 (experimento de modificabilidad) |
+| David Rodríguez | TEC-02 (presupuesto de latencia), TEC-06 (adaptadores), TEC-07 (cifrado y PCI-DSS), TEC-10 (fraude) |
+| Juan S. Sánchez | TEC-03 (observabilidad), TEC-08 (CI/CD) |
+| Yesid Marín | TEC-04 (autoescalado), TEC-05 (continuidad multi-región) |
+
 ### Mapa de épicas
 
 | Épica | Clave Jira | Features | Historias |
