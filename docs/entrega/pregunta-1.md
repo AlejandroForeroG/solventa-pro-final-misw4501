@@ -28,9 +28,25 @@
 | Versión en el repositorio | `docs/epicas-features.md` |
 | Historias de usuario derivadas | `docs/historias-usuario.md` |
 
-**Resumen:** 5 épicas (2 web, 2 móvil, 1 de plataforma), 12 features y 42 historias de usuario
-(32 funcionales + 10 habilitadores técnicos), todas con criterios de aceptación medibles ligados
-a los seis atributos de calidad del caso. Los 59 ítems están cargados en el tablero Jira.
+**Resumen contra los criterios de evaluación:**
+
+| Criterio | Pide | Entregado |
+| --- | --: | --: |
+| Épicas del componente web | ≥ 2 | **2** (WEB-E01, WEB-E02) |
+| Features del componente web | ≥ 4 | **6** (WEB-F01 … WEB-F06) |
+| Épicas del componente móvil | ≥ 2 | **2** (MOV-E01, MOV-E02) |
+| Features del componente móvil | ≥ 4 | **6** (MOV-F01 … MOV-F06) |
+
+Adicionalmente: **35 historias de usuario** con criterios de aceptación medibles, **10 tareas
+técnicas** (TEC-01 … TEC-10) bajo una épica de plataforma, y **1 experimento** de modificabilidad
+(EXP-01). En total **63 ítems** cargados en el tablero Jira.
+
+> `PLA-E01` es una épica **adicional** de plataforma; las épicas que responden a los criterios de
+> evaluación son las 2 web y las 2 móviles.
+
+El backlog fue revisado contra los criterios del curso (Forma, Completo, Consistente,
+Independiente, Negociable, Valiosa, Estimable, Pequeña, Comprobable); las correcciones aplicadas
+están documentadas en `docs/historias-usuario.md`.
 
 ### 2. Acta de constitución del proyecto
 

@@ -59,15 +59,44 @@ Epic  (WEB-E01 · WEB-E02 · MOV-E01 · MOV-E02 · PLA-E01)
 | --- | --- | --: | --- | --- |
 | Épicas | Epic | 5 | SOL-1 … SOL-4, SOL-17 | [`epicas-features.md`](epicas-features.md) |
 | Features | Función | 12 | SOL-5 … SOL-16 | [`epicas-features.md`](epicas-features.md) |
-| Historias de usuario | Historia | 42 | SOL-18 … SOL-59 | [`historias-usuario.md`](historias-usuario.md) |
-| **Total** | | **59** | | |
+| Historias de usuario | Historia | 35 | SOL-18 … SOL-34, SOL-36 … SOL-49, SOL-60 … SOL-63 | [`historias-usuario.md`](historias-usuario.md) |
+| Tareas técnicas | Tarea | 11 | SOL-35, SOL-50 … SOL-59 | [`historias-usuario.md`](historias-usuario.md) |
+| **Total** | | **63** | | |
+
+### Convención de títulos
+
+```
+HU-001 · [WEB-F01] Cotizar desde el canal de un socio
+│         │         └── nombre de la historia
+│         └── feature a la que pertenece (visible en el backlog)
+└── identificador de la historia
+```
+
+Las **tareas técnicas** usan `TEC-01 … TEC-10` y el experimento de modificabilidad `EXP-01`;
+ninguna lleva prefijo de feature porque no pertenecen a una.
+
+### Relación feature ↔ historia
+
+Jira gestionado por el equipo no admite que un ítem de nivel 0 sea padre de otro de nivel 0
+(se verificó: la API rechaza `parent` entre `Función` e `Historia`). La relación se expresa por
+tres vías complementarias:
+
+| Medio | Filtrable | Navegable | Visible en el backlog |
+| --- | :-: | :-: | :-: |
+| Etiqueta `WEB-F01` | ✅ | ❌ | ❌ |
+| Vínculo `Relates` a la feature | ✅ | ✅ | ❌ |
+| Prefijo `[WEB-F01]` en el título | ❌ | ❌ | ✅ |
 
 ### Mapa de épicas
 
 | Épica | Clave Jira | Features | Historias |
 | --- | --- | --- | --- |
 | WEB-E01 · Adquisición, suscripción y gestión digital de pólizas | SOL-1 | WEB-F01 … F03 (SOL-5 … SOL-7) | HU-001 … HU-009 (SOL-18 … SOL-26) |
-| WEB-E02 · Operación de siniestros, socios y control del negocio | SOL-2 | WEB-F04 … F06 (SOL-8 … SOL-10) | HU-010 … HU-018 (SOL-27 … SOL-35) |
-| MOV-E01 · Identidad móvil, autoservicio y pólizas disponibles | SOL-3 | MOV-F01 … F03 (SOL-11 … SOL-13) | HU-019 … HU-024 (SOL-36 … SOL-41) |
-| MOV-E02 · Atención del siniestro y asistencia en movilidad | SOL-4 | MOV-F04 … F06 (SOL-14 … SOL-16) | HU-025 … HU-032 (SOL-42 … SOL-49) |
-| PLA-E01 · Habilitadores técnicos y experimentos de arquitectura | SOL-17 | — | HU-T01 … HU-T10 (SOL-50 … SOL-59) |
+| WEB-E02 · Operación de siniestros, socios y control del negocio | SOL-2 | WEB-F04 … F06 (SOL-8 … SOL-10) | HU-010 … HU-017 (SOL-27 … SOL-34), HU-033 (SOL-60) · tarea EXP-01 (SOL-35) |
+| MOV-E01 · Identidad móvil, autoservicio y pólizas disponibles | SOL-3 | MOV-F01 … F03 (SOL-11 … SOL-13) | HU-019 … HU-024 (SOL-36 … SOL-41), HU-034 (SOL-61), HU-035 (SOL-62) |
+| MOV-E02 · Atención del siniestro y asistencia en movilidad | SOL-4 | MOV-F04 … F06 (SOL-14 … SOL-16) | HU-025 … HU-032 (SOL-42 … SOL-49), HU-036 (SOL-63) |
+| PLA-E01 · Habilitadores técnicos y experimentos de arquitectura | SOL-17 | — | tareas TEC-01 … TEC-10 (SOL-50 … SOL-59) |
+
+> **HU-018 ya no existe como historia.** Se reclasificó a `EXP-01` (tarea): era el experimento de
+> modificabilidad, no algo que un usuario pida. Por eso la numeración de historias salta de
+> HU-017 a HU-019.

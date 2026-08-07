@@ -487,11 +487,55 @@ sigue el formato **Como / Quiero / Para**, con criterios de aceptación en forma
 
 ## Resumen de esfuerzo
 
-| Componente | Épica | Historias | Puntos | Claves Jira |
-| --- | --- | --: | --: | --- |
-| Web (WEB-F01 … WEB-F06) | WEB-E01, WEB-E02 | 18 | 165 | SOL-18 … SOL-35 |
-| Móvil (MOV-F01 … MOV-F06) | MOV-E01, MOV-E02 | 14 | 107 | SOL-36 … SOL-49 |
-| Técnicas transversales | PLA-E01 | 10 | 102 | SOL-50 … SOL-59 |
-| **Total** | | **42** | **374** | |
+| Componente | Épica | Historias | Claves Jira |
+| --- | --- | --: | --- |
+| Web (WEB-F01 … WEB-F06) | WEB-E01, WEB-E02 | 18 | SOL-18 … SOL-34, SOL-60 |
+| Móvil (MOV-F01 … MOV-F06) | MOV-E01, MOV-E02 | 17 | SOL-36 … SOL-49, SOL-61 … SOL-63 |
+| **Total historias de usuario** | | **35** | |
+| Tareas técnicas (TEC-01 … TEC-10) | PLA-E01 | 10 | SOL-50 … SOL-59 |
+| Experimento (EXP-01) | WEB-E02 | 1 | SOL-35 |
 
 Ver el mapa completo de claves Jira en [`tablero.md`](tablero.md).
+
+---
+
+## Revisión aplicada contra los criterios del curso
+
+Tras contrastar el backlog con el video *Construcción y revisión de historias de usuario*, se
+aplicaron cuatro correcciones. El detalle del instrumento está en
+[`guia-revision-backlog.md`](guia-revision-backlog.md).
+
+### 1. Las historias técnicas no eran historias de usuario · `[Forma]` `[Valiosa]`
+
+Las 10 `HU-Txx` no tenían forma *Como/quiero/para* y su valor no lo percibe ningún usuario final.
+Se reclasificaron a **tareas** `TEC-01 … TEC-10`. Lo mismo con `HU-018` ("añadir un nuevo ramo"),
+que era el experimento de modificabilidad: pasó a `EXP-01`.
+
+### 2. Cuatro historias invadían el alcance de otras · `[Independiente]`
+
+| Historia | Se solapaba con | Corrección | Puntos |
+| --- | --- | --- | --- |
+| HU-005 | HU-006 (cobro), HU-007 (firma) | Acotada a suscripción + emisión | 13 → 5 |
+| HU-003 | HU-017 (auditoría) | Retirado el criterio de reconstrucción | 13 → 8 |
+| HU-012 | TEC-04 (contrapresión) | Retirado el criterio de 1.000.000 de eventos | 13 → 8 |
+| HU-014 | Infraestructura | Separado el aislamiento de carga por socio | 13 → 5 |
+
+### 3. Cinco historias no cabían en dos días · `[Pequeña]`
+
+| Original | Resultado |
+| --- | --- |
+| HU-015 (13) | HU-015 Editar regla en consola (8) + **HU-033** Publicar versión sin redespliegue (5) |
+| HU-021 (13) | HU-021 Consultar billetera offline (5) + **HU-034** Proteger la caché local (8) |
+| HU-022 (13) | HU-022 Sincronizar al recuperar red (5) + **HU-035** Resolver conflictos (8) |
+| HU-025 (13) | HU-025 Reportar con evidencia (8) + **HU-036** Reanudar carga sin duplicar (5) |
+| HU-019 (13) | Acotada a documento y prueba de vida (8); biometría → HU-020, cifrado → TEC-07 |
+
+**Ninguna historia supera ya los 8 puntos.**
+
+### 4. Trazabilidad visible en el tablero
+
+Cada historia lleva el prefijo `[WEB-Fxx]` o `[MOV-Fxx]` en el título y un vínculo `Relates`
+hacia su feature, además de la etiqueta que ya tenía.
+
+> **Pendiente para una entrega posterior:** los **mockups** de cada historia. El curso los exige
+> al detallar las historias, no en esta entrega.
