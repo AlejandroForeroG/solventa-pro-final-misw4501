@@ -39,17 +39,6 @@ web/             Cliente web
 mobile/          Cliente móvil
 ```
 
-## Entregables
-
-| Entregable | Ubicación |
-| --- | --- |
-| Épicas y features | [`docs/epicas-features.md`](docs/epicas-features.md) |
-| Acta de constitución | [`docs/acta-constitucion.md`](docs/acta-constitucion.md) |
-| Historias de usuario | [`docs/historias-usuario.md`](docs/historias-usuario.md) |
-| Tablero del proyecto | [`docs/tablero.md`](docs/tablero.md) |
-| Video de evidencias | [`docs/video-evidencias.md`](docs/video-evidencias.md) |
-| Entrega Pregunta 1 | [`docs/entrega/pregunta-1.md`](docs/entrega/pregunta-1.md) |
-
 ---
 
 *Solventa es una empresa ficticia creada con fines académicos; cualquier semejanza con
